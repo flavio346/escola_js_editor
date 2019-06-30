@@ -8,10 +8,10 @@
  
 <script>
 import hljs from "highlight.js";
-//import { remote } from "electron";
+import { remote } from "electron";
 import "highlight.js/styles/monokai-sublime.css";
 import "bulma/css/bulma.min.css";
-//import fs from "fs";
+import fs from "fs";
  
 export default {
   name: "Editor",
@@ -53,9 +53,9 @@ export default {
       }
     };
   },
-  /*methods: {
+  methods: {
     openFile() {
-		// Abre arquivo
+		
         const [filepath] = remote.dialog.showOpenDialog({
         properties: ["openFile"]
   });
@@ -69,7 +69,7 @@ export default {
       alert("Um erro ocorreu ao abrir arquivo:" + err.message);
       return;
     }
-    // Adiciona o conteúdo do arquivo ao editor  
+    
     context.content = data;
   });
     },
@@ -84,7 +84,7 @@ export default {
       alert("Arquivo salvo com sucesso!");
     });
 },
-  }*/
+  }
 };
 </script>
  
